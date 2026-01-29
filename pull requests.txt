@@ -1,0 +1,25 @@
+About pull requests
+Pull requests let you propose, review, and merge code changes.
+
+Pull requests are proposals to merge code changes into a project. A pull request is GitHub's foundational collaboration feature, letting you discuss and review changes before merging them. This helps teams work together, catch issues early, and maintain code quality.
+
+
+Working with pull requests
+The Conversation tab of a pull request displays a description of the changes, a timeline of events, and comments and reviews from collaborators. This central hub lets you track the discussion and progress of the proposed changes.
+
+The Commits tab shows all commits made to the pull request branch in chronological order. This helps you understand the development history and see how the changes evolved over time.
+
+The Checks tab displays the status of any automated tests, builds, or other continuous integration workflows that run when you push commits. These checks help ensure your changes meet quality standards before merging.
+
+The Files changed tab shows the differences between the proposed changes and the existing code, making it easy to see what will change when the pull request merges.
+
+Draft pull requests
+When you create a pull request, you can choose to make it a draft pull request. Draft pull requests cannot be merged, and code owners are not automatically requested to review them. This is useful when you want to share work-in-progress without formally requesting reviews.
+
+When you're ready to get feedback on your pull request, you can mark your draft pull request as ready for review. Marking a pull request as ready for review will request reviews from any code owners. You can convert a pull request to a draft at any time. See Changing the stage of a pull request.
+
+Differences between commits on compare and pull request pages
+The compare and pull request pages use different methods to calculate the diff for changed files:
+
+Compare pages show the diff between the tip of the head ref and the current common ancestor (that is, the merge base) of the head and base ref.
+Pull request pages show the diff between the tip of the head ref and the common ancestor of the head and base ref at the time when the pull request was created. As a result, the merge base used for the comparison might be different.
